@@ -1,0 +1,1 @@
+###Simple slideshow jQuery plugin
