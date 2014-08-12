@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slideshow Test</title>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="../lib/slideshow.js"></script>
+</head>
+<body>
+  <ul style="position: relative; width: 200px; height: 400px;-webkit-padding-start: 0px;">
+    <li>
+      <img src="//placekitten.com/g/200/200">
+    </li>
+    <li>
+      <img src="//placekitten.com/g/200/300">
+    </li>
+    <li>
+      <img src="//placekitten.com/g/200/400">
+    </li>
+  </ul>
+  <div>
+    <a href="#" class="slideshow-nav" data-slideshow-direction="prev"> prev </a>
+    <a href="#" class="slideshow-nav" data-slideshow-direction="next"> next </a>
+  </div>
+  <script>
+    var options = {};
+    $('ul').slideshow('slide', 'li', options);
+  </script>
+</body>
+</html>
